@@ -69,13 +69,13 @@ const BgmPlayer: FC = () => {
 
     const chime1Play = () => {
         const chime1 = document.getElementById('chime1') as HTMLAudioElement
-        chime1.volume = 0.7
+        chime1.volume = 0.4
         chime1.play()
     }
 
     const chime2Play = () => {
         const chime2 = document.getElementById('chime2') as HTMLAudioElement
-        chime2.volume = 0.7
+        chime2.volume = 0.4
         chime2.play()
     }
 
