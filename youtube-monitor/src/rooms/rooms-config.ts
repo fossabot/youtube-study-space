@@ -10,7 +10,7 @@ import { Freepik2RoomLayout } from './layouts/freepik2-room'
 import { Freepik3RoomLayout } from './layouts/freepik3-room'
 import { Freepik4Layout } from './layouts/freepik4-room'
 import { Freepik5Layout } from './layouts/freepik5-room'
-import { mazeRoomLayout } from './layouts/maze-room'
+import { Hal1RoomLayout } from './layouts/hal1-room'
 import { MemberIllustratedRoom1 } from './layouts/member-illustrated-room1'
 import { MemberSimpleRoom1 } from './layouts/member-simple-room1'
 import { SeaOfSeatRoomLayout } from './layouts/sea-of-seat-room'
@@ -23,14 +23,9 @@ type AllRoomsConfig = {
 }
 
 const prodAllRooms: AllRoomsConfig = {
-    generalBasicRooms: [
-        mazeRoomLayout,
-        Anonymous1Layout,
-        Chabio1Layout,
-        Freepik1RoomLayout,
-        Freepik4Layout,
-    ],
+    generalBasicRooms: [Anonymous1Layout, Hal1RoomLayout, Freepik1RoomLayout, Freepik4Layout],
     generalTemporaryRooms: [
+        Chabio1Layout,
         Freepik3RoomLayout,
         classRoomLayout,
         Freepik2RoomLayout,
@@ -44,12 +39,12 @@ const prodAllRooms: AllRoomsConfig = {
 }
 
 const testAllRooms: AllRoomsConfig = {
-    generalBasicRooms: [mazeRoomLayout],
+    generalBasicRooms: [Anonymous1Layout, Hal1RoomLayout],
     generalTemporaryRooms: [
-        Anonymous1Layout,
-        Chabio1Layout,
         Freepik1RoomLayout,
         Freepik4Layout,
+        Anonymous1Layout,
+        Chabio1Layout,
         Freepik3RoomLayout,
         classRoomLayout,
         Freepik2RoomLayout,
